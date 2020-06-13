@@ -1,0 +1,5 @@
+Lista 7 (Lab) Termin wysłania na SVN do 14.06.2020
+Na tej liście należy korzystać z bibliotek uczenia maszynowego. Jej celem jest poznanie aktualnie wykorzystywanych narzędzi uczenia maszynowego. Wszystkie zadania wykonaj w notatniku jupyter. Proszę wysyłać tylko notatnik bez danych np. resnet50_coco_best_v2.1.0.h5 na SVN, przy wykorzystaniu ewentualnych innych danych proszę podać tylko linka.
+
+zad1.
+(10pt) Wykonaj zadanie 2 z listy 6 z wykorzystaniem Kerasa i Tensorflow. Wykonaj testy dla kilku funkcji aktywacji oraz dla wielu warstw sieci. Poeksperymentuj!

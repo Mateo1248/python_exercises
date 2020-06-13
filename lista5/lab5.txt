@@ -1,0 +1,18 @@
+Lista 5 (Lab) Termin wysłania na SVN do 3.05.2020
+Przy pisaniu programów (funkcji) NALEŻY stosować się do ogólnie przyjętego stylu programowania w języku Python. Proszę dokładnie przeczytać PEP 8 (tutorial, google python style) i PEP 257.
+
+zad1.
+(10pt) Napisz wykorzystując regresję liniową program, który na podstawie oceny filmów przez użytkowników będzie starał się przewidzieć ocenę innych użytkowników. Jako dane wykorzystamy zbiór MovieLens Latest Datasets. Dokładnie wybierzemy mniejszy zbiór, pobierz plik ml-latest-small.zip. Zadanie polega na wybraniu z pliku ratings.csv tych użytkowników (
+userId), którzy ocenili film 'Toy Story (1995)', który w tym pliku ma identyfikator '1' (patrz movies.csv). W tym pliku osób takich jest 215.
+
+zad2.
+(15pt) Napisz system rekomendacji filmów. Systemy takie są wykorzystywane przez różne firmy np. Netflix organizował konkurs na opracowanie algorytmu, który będzie przewidywał ocenę użytkownika (Netflix Prize). W zadaniu tym zaimplementujemy podobny system, który jednak zamiast przewidywania będzie na podstawie preferencji użytkownika rekomendował filmy, które najprawdopodobniej mu się spodobają. Istnieje wiele sposobów, aby taki system napisać, dla zainteresowanych bardziej tematem proponuje zobaczyć np. Recommendation Systems. W tym zadaniu wybierzemy w miarę prosty i łatwy do implementacji system rekomendacji. Sformalizujmy problem. Załóżmy, że mamy macierz oceny, gdzie wiersze będą reprezentować użytkowników a kolumny filmy np.
+
+		Matrix	Star Wars IV
+	Alice	5	4
+	Bob	0	1
+	John	2	2
+	Ada	5	5
+
+Patrząc na powyższą macierz widać, że kolumny pierwsza i druga mają podobne oceny stąd można wywnioskować, że filmy Matrix i Star Wars IV są (według użytkowników) podobne do siebie, czyli jeśli komuś podobał się Matrix to jest duża szansa, że będzie podobał mu się Star Wars i odwrotnie. Dlatego "podobieństwo" sformalizujemy przez wykorzystanie podobieństwa cosinusowego
+Otrzymane reprezentacje wyświetl w postaci nazw filmów, korzystając z movies.csv. Uwaga: w rzeczywistych danych otrzymamy dużą liczbę zer, nawet całe kolumny, wtedy dostaniemy wartości NaN przy dzieleniu! Rozwiąż ten problem wykorzystując np.nan_to_num(...).
